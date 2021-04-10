@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.adrianwowk.hypixel.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+  ],
+  "client": [
+    "WorldRendererMixin",
+    "GameMenuScreenMixin",
+    "TextFieldWidgetMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

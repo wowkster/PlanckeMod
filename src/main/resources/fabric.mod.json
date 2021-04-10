@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "hypixel",
+  "version": "${version}",
+  "name": "Hypixel Plankce Mod",
+  "description": "A simple mod to check the stats of hypixel players",
+  "authors": [
+    "Wowkster"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/hypixel/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.adrianwowk.hypixel.client.HypixelClient"
+    ],
+    "main": [
+      "com.adrianwowk.hypixel.Hypixel"
+    ],
+    "cotton-client-commands": ["com.adrianwowk.hypixel.client.commands.MyCommands"]
+  },
+  "mixins": [
+    "hypixel.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.2",
+    "fabric": "*",
+    "minecraft": "1.14.4",
+    "cotton-client-commands": "^1.0.0"
+  }
+}
