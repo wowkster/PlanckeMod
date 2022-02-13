@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '0.7-SNAPSHOT'
+    id 'fabric-loom' version '0.11-SNAPSHOT'
     id 'maven-publish'
 }
 
@@ -39,9 +39,7 @@ processResources {
         expand "version": project.version
     }
 
-    from(sourceSets.main.resources.srcDirs) {
-        exclude "fabric.mod.json"
-    }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
 
 // ensure that the encoding is set to UTF-8, no matter what the system default is

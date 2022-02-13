@@ -16,7 +16,7 @@ import java.util.UUID;
 
 public class APIRequests {
 
-    public static final String API_KEY = "5f5ff4ba-af63-4308-a994-8fdc9f9acc43";
+    public static final String API_KEY = "f9350ddc-60f0-4cd0-bffe-34583c828cf9";
 
     public static JsonObject getHypixelResponse(UUID uuid) throws Exception{
         if (uuid == null)
